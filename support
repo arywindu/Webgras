@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GRAS GAMESTORE</title>
+  <meta charset="utf-8">
+  <meta name=iewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+      }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img style=" padding-top: -15px; margin-top: -10px;" src="img/grass.png" width="35" height="35"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  <br>
+  <br>
+<div class="container-fluid text-center">    
+    <div class="col-sm-5 text-left"> 
+      <form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="review">Review:</label>
+    <div class="col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> Excellent </label>
+        <label><input type="checkbox"> Good </label>
+        <label><input type="checkbox"> Like </label>
+        <label><input type="checkbox"> Enough </label>
+        <label><input type="checkbox"> Bad </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Request:</label>
+    <div class="col-sm-10">
+     
+  <textarea id="title" class="form-control" rows="5" onkeyup="Allow()"></textarea>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success" onclick="insert()">Submit</button>
+      <div id="display"></div>
+    </div>
+  </div>
+ 
+</form>
+    </div>
+    <div class="col-sm-3">
+      
+    </div>
+    <div class="col-sm-4 sidenav">
+      <h1>About Us</h1>
+      <p>Karya game digital siswa-siswi tidak hanya untuk dimainkan sendiri, tapi untuk mereka jual. Di hari terakhir, keluarga dan kerabat diundang menghadiri presentasi Product Launching game perdana mereka. Inovasi yang sukses, berangkat dari empati anak-anak terhadap user karya mereka.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
+Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede.
+Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien.
+
+</p>
+    </div>
+  </div>
+</div>
+<footer>
+  
+</footer>
+</body>
+</html>
